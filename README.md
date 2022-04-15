@@ -9,4 +9,5 @@ You can click the Preview link to take a look at your changes.
 
 Some of my repos:
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=SwapColors&theme=calm)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=deminearchiver&repo=SwapColors&theme=calm&show_owner=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=deminearchiver&repo=BLTC&theme=calm&show_owner=true)](https://github.com/anuraghazra/github-readme-stats)
