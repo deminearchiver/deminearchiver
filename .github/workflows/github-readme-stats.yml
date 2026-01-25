@@ -52,13 +52,13 @@ jobs:
             &title_color=${{ matrix.theme.md-sys-color-primary }}\
             &icon_color=${{ matrix.theme.md-sys-color-on-surface-variant }}\
             &text_color=${{ matrix.theme.md-sys-color-on-surface }}"
-          path: temp/github-readme-stats/stats-${{ matrix.theme.name }}.svg
+          path: temp/github-readme-stats/top-langs-${{ matrix.theme.name }}.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/upload-artifact@v4
         with:
-          name: github-readme-stats-stats-${{ matrix.theme.name }}
-          path: temp/github-readme-stats/stats-${{ matrix.theme.name }}.svg
+          name: github-readme-stats-${{ matrix.theme.name }}
+          path: temp/github-readme-stats/*.svg
 
   push:
     needs: generate
