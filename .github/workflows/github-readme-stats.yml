@@ -29,8 +29,7 @@ jobs:
         with:
           card: stats
           options: >-
-            username=${{ github.repository_owner }}
-            &show_icons=true
+            username=${{ github.repository_owner }}&show_icons=true
             &border_radius=28
             &bg_color=${{ matrix.theme.md-sys-color-surface-container }}
             &hide_border=true
