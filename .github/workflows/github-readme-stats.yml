@@ -25,11 +25,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: readme-tools/github-readme-stats-action@v1
+      - uses: stats-organization/github-readme-stats-action@v1
         with:
           card: stats
           options: "username=${{ github.repository_owner }}\
             &show_icons=true\
+            &border_radius=28\
+            &bg_color=${{ matrix.theme.md-sys-color-surface-container }}\
+            &hide_border=true\
+            &title_color=${{ matrix.theme.md-sys-color-primary }}\
+            &icon_color=${{ matrix.theme.md-sys-color-on-surface-variant }}\
+            &text_color=${{ matrix.theme.md-sys-color-on-surface }}"
+          path: temp/github-readme-stats/stats-${{ matrix.theme.name }}.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: stats-organization/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: "username=${{ github.repository_owner }}\
+            &hide=html,css,javascript,glsl,hlsl,sass,scss\
+            &layout=compact\
+            &langs_count=5\
             &border_radius=28\
             &bg_color=${{ matrix.theme.md-sys-color-surface-container }}\
             &hide_border=true\
