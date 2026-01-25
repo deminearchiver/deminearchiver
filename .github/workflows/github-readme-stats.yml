@@ -1,0 +1,63 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        theme:
+          - name: light
+            md-sys-color-surface-container: F3E2FF
+            md-sys-color-on-surface: 38264C
+            md-sys-color-on-surface-variant: 67537C
+            md-sys-color-primary: 6935D9
+          - name: dark
+            md-sys-color-surface-container: 240E3B
+            md-sys-color-on-surface: F1DFFF
+            md-sys-color-on-surface-variant: B9A2D0
+            md-sys-color-primary: B99FFF
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: >-
+            username=${{ github.repository_owner }}
+            &show_icons=true
+            &border_radius=28
+            &bg_color=${{ matrix.theme.md-sys-color-surface-container }}
+            &hide_border=true
+            &title_color=${{ matrix.theme.md-sys-color-primary }}
+            &icon_color=${{ matrix.theme.md-sys-color-on-surface-variant }}
+            &text_color=${{ matrix.theme.md-sys-color-on-surface }}
+          path: temp/github-readme-stats/stats-${{ matrix.theme.name }}.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: github-readme-stats-stats-${{ matrix.theme.name }}
+          path: temp/github-readme-stats/stats-${{ matrix.theme.name }}.svg
+
+  push:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: .github/images/github-readme-stats/
+          pattern: github-readme-stats-*
+          merge-multiple: true
+      - run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@users.noreply.github.com'
+          git add .github/images/github-readme-stats/*
+          git commit -m 'Update README cards' || exit 0
+          git push
