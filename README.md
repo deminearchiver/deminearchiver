@@ -11,21 +11,13 @@ Why write a profile README when the profile is self-explanatory?
   <h3>Socials</h3>
 
   <p>
-    <a href="https://youtube.com/@deminearchiver">
-      <strong>YouTube</strong>
-    </a>
+    <a href="https://youtube.com/@deminearchiver"><strong>YouTube</strong></a>
     ·
-    <a href="https://twitch.tv/deminearchiver">
-      <strong>Twitch</strong>
-    </a>
+    <a href="https://twitch.tv/deminearchiver"><strong>Twitch</strong></a>
     ·
-    <a href="https://bsky.app/profile/deminearchiver.bsky.social">
-      <strong>BlueSky</strong>
-    </a>
+    <a href="https://bsky.app/profile/deminearchiver.bsky.social"><strong>BlueSky</strong></a>
     ·
-    <a href="https://x.com/minearchiver">
-      <strong>X</strong>
-    </a>
+    <a href="https://x.com/minearchiver"><strong>X</strong></a>
   </p>
 
 </div>
