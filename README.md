@@ -35,7 +35,10 @@ Why write a profile README when the profile is self-explanatory?
       srcset=".github/images/github-readme-stats/stats-light.svg"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src=".github/images/github-readme-stats/stats-light.svg" alt="deminearchiver's GitHub Stats" />
+    <img
+      src=".github/images/github-readme-stats/stats-light.svg"
+      alt="deminearchiver's GitHub Stats"
+    />
   </picture>
 
   <br>
@@ -49,7 +52,10 @@ Why write a profile README when the profile is self-explanatory?
       srcset=".github/images/github-readme-stats/top-langs-light.svg"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src=".github/images/github-readme-stats/top-langs-light.svg" alt="Most Used Languages" />
+    <img
+      src=".github/images/github-readme-stats/top-langs-light.svg"
+      alt="Most Used Languages"
+    />
   </picture>
 
 </div>
