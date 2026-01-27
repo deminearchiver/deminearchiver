@@ -39,7 +39,8 @@ jobs:
             &hide_border=true\
             &title_color=${{ matrix.theme.md-sys-color-primary }}\
             &icon_color=${{ matrix.theme.md-sys-color-on-surface-variant }}\
-            &text_color=${{ matrix.theme.md-sys-color-on-surface }}"
+            &text_color=${{ matrix.theme.md-sys-color-on-surface }}\
+            &ring_color=${{ matrix.theme.md-sys-color-primary }}"
           path: temp/github-readme-stats/stats-${{ matrix.theme.name }}.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
