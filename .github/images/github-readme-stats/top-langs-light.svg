@@ -130,7 +130,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="173.25"
+          width="173.26"
           height="8"
           fill="#00B4AB"
         />
@@ -138,7 +138,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="173.25"
+          x="173.26"
           y="0"
           width="39.64"
           height="8"
@@ -148,7 +148,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="212.89"
+          x="212.89999999999998"
           y="0"
           width="13.12"
           height="8"
@@ -158,7 +158,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="226.01"
+          x="226.01999999999998"
           y="0"
           width="12.54"
           height="8"
@@ -168,7 +168,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="238.54999999999998"
+          x="238.55999999999997"
           y="0"
           width="11.45"
           height="8"
@@ -181,7 +181,7 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#00B4AB" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Dart 69.30%
+        Dart 69.31%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
