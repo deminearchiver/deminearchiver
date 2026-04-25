@@ -130,7 +130,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="176.36"
+          width="176.37"
           height="8"
           fill="#00B4AB"
         />
@@ -138,9 +138,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="176.36"
+          x="176.37"
           y="0"
-          width="38.01"
+          width="38"
           height="8"
           fill="#3178c6"
         />
@@ -181,7 +181,7 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#00B4AB" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Dart 70.54%
+        Dart 70.55%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
