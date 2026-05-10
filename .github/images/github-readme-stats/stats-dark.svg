@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">deminearchiver's GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 80, Total Commits  (last year) : 1398, Total PRs: 21, Total Issues: 23, Contributed to (last year): 9</desc>
+        <desc id="descId">Total Stars Earned: 80, Total Commits  (last year) : 1398, Total PRs: 22, Total Issues: 31, Contributed to (last year): 9</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 106.14603078460102;
+        stroke-dashoffset: 103.29751917126389;
       }
     }
   
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >21</text>
+      >22</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -207,7 +207,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >23</text>
+      >31</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
