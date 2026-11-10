@@ -42,7 +42,7 @@ jobs:
             &text_color=${{ matrix.theme.md-sys-color-on-surface }}\
             &ring_color=${{ matrix.theme.md-sys-color-primary }}"
           path: temp/github-readme-stats/stats-${{ matrix.theme.name }}.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
@@ -58,7 +58,7 @@ jobs:
             &icon_color=${{ matrix.theme.md-sys-color-on-surface-variant }}\
             &text_color=${{ matrix.theme.md-sys-color-on-surface }}"
           path: temp/github-readme-stats/top-langs-${{ matrix.theme.name }}.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
